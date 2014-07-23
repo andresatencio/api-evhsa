@@ -17,6 +17,7 @@ app.configure(function(){
   app.set('view engine', 'ejs');
   app.use(express.favicon());
   app.use(express.logger('dev'));
+  app.use(permitirCrossDomain);
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
@@ -30,6 +31,17 @@ app.configure('development', function(){
 app.get('/', routes.index);
 api(app)
 
+function permitirCrossDomain(req, res, next) {
+  //en vez de * se puede definir SÓLO los orígenes que permitimos
+  res.header('Access-Control-Allow-Origin', '*');
+  //metodos http permitidos para CORS
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+}
+
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+
