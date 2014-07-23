@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>api-evhsa</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/xpressio.theme.default.css">
+</head>
+<body>
+	<header class="bck theme red text center">
+		<div class="color white">
+			<nav class="inline middle">
+				<span class="logo">api-evhsa</span>
+			</nav>
+			<div class="nav_space"></div>
+			<nav class="inline middle">
+				<span class="margin"><a href="//github.com/andresatencio/api-evhsa" target="_blank"><i class="fa fa-github"></i> Github</a></span>
+			</nav>
+		</div>
+	</header>
+	<section class="bck theme background text center">
+		<div class="site_width padding">
+			<h1 class="color theme title">
+				api-evhsa
+			</h1>
+			<h3 class="text book color theme subtitle margin_bottom">
+				Ahora accede a los datos del bondi de forma libre, pudiendo hacerte tu propio cuando llega, o incluso alarmas que te avisen: "Se te esta yendo el bondi, boludoooo...".
+			</h3>
+			<div class="row">
+				<div class="col6">
+					<h2 class="fa fa-bolt"></h2>
+					<h4>Rapido</h4>
+					<p>Obvio que depende de los amigos de geosolutions.</p>
+				</div>
+				<div class="col6">
+					<h2 class="fa fa-bullseye"></h2>
+					<h4>CORS</h4>
+					<p>Se puede consumir con ajax desde cualquier lado.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bck theme background">
+		<div class="site_width padding">
+			<h2 class="text center book black white subtitle margin_bottom">
+				Consultas:
+			</h2>
+			<div class="row color black">
+				<div class="col6">
+					<blockquote>
+						<p>/api/lineas</p>
+						<p>/api/:linea/calles</p>
+						<p>/api/:linea/:calle/interseccion</p>
+						<p>/api/:linea/:calle/:interseccion/parada</p>
+						<p>/api/:parada/:linea/cuandollega</p>
+						<p><small>Gracias geosolutions por usar phonegap. <cite title="LTA">LTA evhsa</cite></small></p>
+					</blockquote>			
+				</div>
+				<div class="col6">
+					<h4 class="text book color theme subtitle margin_bottom">Ejemplo:</h4>
+					<ul class="square">
+						<li><a href="/api/lineas" target="_blank">/api/lineas</a></li>
+						<li><a href="/api/2562/calles" target="_blank">/api/2562/calles</a></li>
+						<li><a href="/api/2562/25 DE MAYO/intersecciones" target="_blank">/api/2562/25 DE MAYO/intersecciones</a></li>
+						<li><a href="/api/2562/25 DE MAYO/PELLEGRINI Y GARIBALDI/paradas" target="_blank">/api/2562/25 DE MAYO/PELLEGRINI Y GARIBALDI/paradas</a></li>
+						<li><a href="/api/N0097/2562/cuandollega" target="_blank">/api/N0097/2562/cuandollega</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+</body>
+</html>
