@@ -9,7 +9,7 @@
     "cheerio": "^0.17.0",
     "ejs": "*",
     "express": "3.0.0",
-    "jquery": "^2.1.1",
+    "jquery": "^3.5.0",
     "jsonp": "0.0.4",
     "jsonp-client": "^0.5.1",
     "moment": "^2.7.0",
